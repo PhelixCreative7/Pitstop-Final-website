@@ -1,0 +1,263 @@
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #111111, #2a2a2a, #111111);
+  font-family: 'Anton', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  aspect-ratio: auto;
+  background: linear-gradient(135deg, #111111, #2a2a2a, #111111);
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.top-left-stripes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+  z-index: 2;
+}
+
+.top-left-stripes div {
+  width: 12px;
+  height: 48px;
+  background: linear-gradient(180deg, #facc15, #b28704);
+  transform-origin: bottom left;
+  transform: rotate(-12deg);
+  opacity: 1;
+}
+
+.bottom-right-stripes {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+}
+
+.bottom-right-stripes div {
+  width: 12px;
+  height: 48px;
+  background: linear-gradient(180deg, #facc15, #b28704);
+  transform-origin: bottom left;
+  transform: rotate(-12deg);
+  opacity: 1;
+}
+
+.website-text {
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.website-top-right {
+  top: 16px;
+  right: 16px;
+  font-size: 1em;
+}
+
+.website-bottom-left {
+  bottom: 16px;
+  left: 16px;
+  font-size: 1em;
+}
+
+.left-bars {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 24px;
+  height: 80%;
+  padding: 0 2% 15% 2%;
+  z-index: 1;
+}
+.left-bars div {
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(to bottom, #facc15, #b28704);
+  opacity: 1;
+}
+
+.plus-signs {
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.3em;
+  user-select: none;
+  display: flex;
+  gap: 8px;
+}
+
+.plus-top-left {
+  top: 64px;
+  left: 96px;
+}
+
+.plus-bottom-right {
+  bottom: 64px;
+  right: 96px;
+}
+
+.text-content {
+  position: absolute;
+  top: 35%;
+  right: 8%;
+  transform: translateY(-50%);
+  max-width: 600px;
+  color: white;
+  text-align: right;
+  z-index: 1;
+  opacity: 1;
+}
+
+.text-content .small-text {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  position: relative;
+  top: 70px; 
+  left: 85px;
+}
+
+.text-content .big-text {
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -0.02em;
+  margin: 0;
+  position: relative;
+  top: 75px; 
+  left: 60px;
+}
+
+/* .text-content .arrow {
+  position: relative;
+  left: 0;
+  font-size: 120px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  z-index: -1;
+  pointer-events: none;
+}   */
+
+.text-content .small-text-bottom {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  position: relative;
+  top: 80px; 
+  left: 30px;
+}
+
+.car-image {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 65%;
+  height: auto;
+  max-width: none;
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,0.7));
+  z-index: 2;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .text-content .small-text,
+  .text-content .small-text-bottom {
+    font-size: 32px;
+  }
+
+  .text-content .big-text {
+    font-size: 150px;
+  }
+
+  .left-bars div {
+    width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content {
+    top: 30%;
+  }
+
+  .text-content .small-text,
+  .text-content .small-text-bottom {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .text-content .big-text {
+    font-size: 100px;
+  }
+
+  .left-bars {
+    gap: 16px;
+  }
+
+  .left-bars div {
+    width: 40px;
+  }
+
+  .car-image {
+    width: 60%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content {
+    top: 25%;
+  }
+
+  .text-content .small-text,
+  .text-content .small-text-bottom {
+    font-size: 18px;
+  }
+
+  .text-content .big-text {
+    font-size: 72px;
+  }
+
+  .left-bars div {
+    width: 30px;
+  }
+
+  .car-image {
+    width: 65%;
+    left: 5%;
+  }
+}
