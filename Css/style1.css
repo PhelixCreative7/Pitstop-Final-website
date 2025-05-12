@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('city-sparkles-light-streets-night.jpg') no-repeat center center/cover;
+    background-blend-mode:darken;
+}
+.overlay {
+    position: absolute;
+    top: 0px;
+    width: 120%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+}
+.content h1 {
+    position: absolute;
+    top: 10px;
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 1px;
+    margin-top:1px;
+    
+}
+.content .highlight {
+    color: white;
+   background: linear-gradient(to right, #FFD700, #FFA500);
+    display: inline-block;
+    font-size: 110px;
+    font-style:unset;
+}
+.car-image {
+    position:absolute;
+    bottom: 0.7 ;
+    margin-bottom: 0px;
+    right:22%;
+    max-width: 100%;
+    width: 800px;    /* Increase this value as needed */
+  height: aut15;
+  z-index: 3;
+}
+.contact {
+  position: absolute;
+    bottom: 5%;
+    right: 10%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.info-top {
+    position: absolute;
+      bottom: 20px;
+      right: 120px;
+      color: aliceblue;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 25px;
+}
+
+  .yellow-stripe {
+    position: absolute;
+      right: 320px;
+     max-width: 100%;
+      top: 0;
+      width: 250px;
+      height: 69%;
+      background: linear-gradient(to bottom, #FFD700, #FFA500); /* Yellow to orange */
+      transform: skewX(-20deg);
+      box-shadow: 0 0 30px rgba(255, 200, 0, 0.5);
+      z-index: 2;
+      
+    }
+
+      footer {
+    width: 100%;
+    position: absolute;
+    left: 170px;
+    bottom: 20px;
+    padding: 10px 20px; /* some padding from left */
+  }
+
+  .pluses {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 10px;
+    text-align: left;
+  }
