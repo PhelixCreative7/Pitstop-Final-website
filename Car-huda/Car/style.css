@@ -29,7 +29,6 @@ body, html {
   background-color: rgba(17, 17, 17, 0.85);
   z-index: 1;
 }
-
 .container {
   position: relative;
   z-index: 2;
@@ -41,7 +40,21 @@ body, html {
 .main-title {
   font-size: 80px;
   font-weight: bold;
-} 
+}
+.right{
+    position: relative;
+    right: 300px;
+    font-size: 30px;
+    font-weight: lighter;
+    bottom: 30px;
+}
+.left{
+    position: relative;
+    left: 300px;
+    font-size: 30px;
+    font-weight: lighter;
+    bottom: 30px;
+}
 .subtitle {
   background: rgb(255,191,0);
   color: white;
@@ -113,21 +126,17 @@ body, html {
   .main-title {
     font-size: 50px;
   }
-
-  .subtitle {
+ .subtitle {
     font-size: 30px;
     padding: 5px 15px;
-  }
-
-  .tagline {
+    }
+ .tagline {
     font-size: 25px;
-  }
-
+    }
   .tips-container {
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-
+   }
   .tip-box {
     font-size: 14px;
   }
