@@ -7,6 +7,28 @@
 
 </head>
 <body>
+  <div class="navbar">
+    <nav>
+    
+    <div class="nav-links">
+      <a href="#">About</a>
+      <a href="#">Our Services</a>
+      <a href="#">Explore More</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#" onclick="toggleMenu()">About</a>
+    <a href="#" onclick="toggleMenu()">Our Services</a>
+    <a href="#" onclick="toggleMenu()">Explore More</a>
+  </div>
+ </div>
   
   <div class="container" role="main" aria-label="Discount banner with yellow car and discount text">
     <div class="top-left-stripes" aria-hidden="true">
@@ -79,10 +101,11 @@
     </div>
 
     <div class="text-content">
+      
       <div class="small-text">ENJOY DISCOUNT UP TO</div>
       <h1 class="big-text">20%</h1>
       <div class="small-text-bottom">FOR ALL SERVICES</div>
-      <div class="arrow">&lt;</div>
+      
     </div>
 
     <img
@@ -95,7 +118,6 @@
       height="1000"
     />
   </div>
-
-  <script src="first.js"></script>
+  <script src="Script/script.js"></script>
 </body>
 </html>

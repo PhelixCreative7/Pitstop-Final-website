@@ -28,6 +28,7 @@ body, html {
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   opacity: 1;
+  top: 70px;
 }
 
 .top-left-stripes {
@@ -51,7 +52,7 @@ body, html {
 
 .bottom-right-stripes {
   position: absolute;
-  bottom: 0;
+  bottom: 70px;
   right: 0;
   display: flex;
   gap: 4px;
@@ -84,7 +85,7 @@ body, html {
 }
 
 .website-bottom-left {
-  bottom: 16px;
+  bottom: 70px;
   left: 16px;
   font-size: 1em;
 }
@@ -123,7 +124,7 @@ body, html {
 }
 
 .plus-bottom-right {
-  bottom: 64px;
+  bottom: 120px;
   right: 96px;
 }
 
@@ -193,71 +194,230 @@ body, html {
   opacity: 1;
 }
 
-@media (max-width: 1200px) {
-  .text-content .small-text,
-  .text-content .small-text-bottom {
-    font-size: 32px;
-  }
-
-  .text-content .big-text {
-    font-size: 150px;
-  }
-
-  .left-bars div {
-    width: 60px;
-  }
+/* navbar section */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  
 }
 
-@media (max-width: 768px) {
-  .text-content {
-    top: 30%;
+
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+  
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: linear-gradient(to right, yellow, orange);
+  color: black;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, yellow, orange);
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.logo i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.search-bar {
+  flex: 1; /* takes up available space */
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 300px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: linear-gradient(to right, yellow, orange);
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 2000;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.mobile-menu a:hover {
+  background: linear-gradient(to right, yellow, orange);
+  color: black;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.blur-active::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(8px);
+  z-index: 1500;
+}
+
+
+@media (max-width: 600px) {
+  /* Limit the number of stripes */
+  .top-left-stripes div:nth-child(n+17),
+  .bottom-right-stripes div:nth-child(n+17) {
+    display: none;
   }
 
-  .text-content .small-text,
-  .text-content .small-text-bottom {
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  /* Reposition the top-right website text */
+  .website-top-right {
+    top: 90px; /* pushed lower to avoid overlap */
+    right: 16px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+    
+
   }
 
-  .text-content .big-text {
-    font-size: 100px;
+  /* Hide bottom-left website text */
+  .website-bottom-left {
+    display: none;
   }
 
+  /* Widen the left bars container */
   .left-bars {
-    gap: 16px;
+    width: 30%;
+    bottom: 5.5%;
+    
   }
 
-  .left-bars div {
-    width: 40px;
-  }
-
-  .car-image {
-    width: 60%;
-    left: 10%;
-  }
-}
-
-@media (max-width: 480px) {
+  /* Responsive text content */
   .text-content {
-    top: 25%;
+    
+    left: 5%;
+    max-width: 90%;
+    top: 50%;
+    /* transform: translateY(0); */
+    justify-content: right;
   }
 
   .text-content .small-text,
   .text-content .small-text-bottom {
-    font-size: 18px;
+    font-size: 25px;
+    margin: 5px 0;
+    position: static;
+    white-space: normal;
+    word-wrap: break-word;
   }
 
   .text-content .big-text {
-    font-size: 72px;
+    font-size: 68px;
+    position: static;
+    line-height: 1;
+    word-wrap: break-word;
+    top: 100px;
   }
 
-  .left-bars div {
-    width: 30px;
-  }
-
+  /* Car image adjustments */
   .car-image {
-    width: 65%;
+    width: 100%;
+    left: 10%;
+    bottom: 10%;
+    max-width: 100%;
+  }
+  .plus-top-left {
     left: 5%;
   }
+
+  @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
+
+@media (min-width: 650px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .search-bar {
+    display: none;
+  }
+}
+
+
+
+}
+ 
