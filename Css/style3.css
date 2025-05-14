@@ -1,15 +1,16 @@
-  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100vh;
   background: linear-gradient(135deg, #111111, #2a2a2a, #111111);
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +147,7 @@ body, html {
   letter-spacing: 0.1em;
   margin-bottom: 20px;
   position: relative;
-  top: 70px; 
+  top: 70px;
   left: 85px;
 }
 
@@ -157,7 +158,7 @@ body, html {
   letter-spacing: -0.02em;
   margin: 0;
   position: relative;
-  top: 75px; 
+  top: 75px;
   left: 60px;
 }
 
@@ -178,7 +179,7 @@ body, html {
   letter-spacing: 0.1em;
   margin-top: 20px;
   position: relative;
-  top: 80px; 
+  top: 80px;
   left: 30px;
 }
 
@@ -189,7 +190,7 @@ body, html {
   width: 65%;
   height: auto;
   max-width: none;
-  filter: drop-shadow(0 10px 10px rgba(0,0,0,0.7));
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.7));
   z-index: 2;
   opacity: 1;
 }
@@ -206,16 +207,12 @@ nav {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
   z-index: 1000;
-  
 }
-
-
 
 .nav-links {
   display: flex;
   gap: 1.5rem;
   margin-left: auto;
-  
 }
 
 .nav-links a {
@@ -277,8 +274,6 @@ nav {
   font-size: 1rem;
 }
 
-
-
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
@@ -294,6 +289,21 @@ nav {
   gap: 1.5rem;
   transition: right 0.3s ease;
   z-index: 2000;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(to right, yellow, orange);
+  z-index: -1;
+  border-radius: 12px;
 }
 
 .mobile-menu a {
@@ -303,6 +313,11 @@ nav {
   transition: background 0.3s ease;
   padding: 8px;
   border-radius: 5px;
+}
+
+.mobile-menu a {
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
 .mobile-menu a:hover {
@@ -315,7 +330,7 @@ nav {
 }
 
 .blur-active::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -325,24 +340,19 @@ nav {
   z-index: 1500;
 }
 
-
 @media (max-width: 600px) {
   /* Limit the number of stripes */
-  .top-left-stripes div:nth-child(n+17),
-  .bottom-right-stripes div:nth-child(n+17) {
+  .top-left-stripes div:nth-child(n + 17),
+  .bottom-right-stripes div:nth-child(n + 17) {
     display: none;
   }
 
-  /* Reposition the top-right website text */
   .website-top-right {
     top: 90px; /* pushed lower to avoid overlap */
     right: 16px;
     font-size: 10px;
     letter-spacing: 1px;
     white-space: nowrap;
-
-    
-
   }
 
   /* Hide bottom-left website text */
@@ -354,15 +364,13 @@ nav {
   .left-bars {
     width: 30%;
     bottom: 5.5%;
-    
   }
 
   /* Responsive text content */
   .text-content {
-    
     left: 5%;
     max-width: 90%;
-    top: 50%;
+    top: 30%;
     /* transform: translateY(0); */
     justify-content: right;
   }
@@ -387,7 +395,7 @@ nav {
   /* Car image adjustments */
   .car-image {
     width: 100%;
-    left: 10%;
+    left: 0;
     bottom: 10%;
     max-width: 100%;
   }
@@ -396,28 +404,36 @@ nav {
   }
 
   @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
   }
 
-  .hamburger {
-    display: flex;
+  @media (min-width: 650px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .search-bar {
+      display: none;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .text-content {
+      max-width: 90%;
+      padding: 0 10px;
+    }
+
+    .text-content .small-text {
+      font-size: 20px;
+      display: block;
+    }
   }
 }
-
-@media (min-width: 650px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-
-@media (max-width: 650px) {
-  .search-bar {
-    display: none;
-  }
-}
-
-
-
-}
- 
