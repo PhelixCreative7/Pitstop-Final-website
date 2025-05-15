@@ -1,15 +1,18 @@
+/* Reset default browser styles and set box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set up base font and layout settings */
 body, html {
   height: 100%;
   font-family: 'Bebas Neue', sans-serif;
   overflow-x: hidden;
 }
 
+/* Background with image and dark overlay */
 .background-overlay {
   background: url('image.jpg') no-repeat center center/cover;
   position: relative;
@@ -23,6 +26,7 @@ body, html {
   overflow-y: auto;
 }
 
+/* Dark transparent overlay layer */
 .background-overlay::before {
   content: '';
   position: absolute;
@@ -34,6 +38,7 @@ body, html {
   z-index: 1;
 }
 
+/* Main content container */
 .container {
   position: relative;
   z-index: 2;
@@ -44,6 +49,7 @@ body, html {
   width: 100%;
 }
 
+/* Main title styling */
 .main-title {
   font-size: 80px;
   font-weight: bold;
@@ -54,6 +60,7 @@ body, html {
   padding-right: 15px;
 }
 
+/* Decorative symbols around title */
 .right,
 .left {
   font-size: 30px;
@@ -61,6 +68,7 @@ body, html {
   bottom: 30px;
 }
 
+/* Positioning of left and right title symbols */
 .right {
   position: absolute;
   left: 0;
@@ -73,6 +81,7 @@ body, html {
   transform: translateX(-20px);
 }
 
+/* Yellow subtitle block */
 .subtitle {
   background: rgb(255,191,0);
   color: white;
@@ -83,6 +92,7 @@ body, html {
   font-size: 40px;
 }
 
+/* Tagline text */
 .tagline {
   margin-top: 8px;
   font-size: 40px;
@@ -91,6 +101,7 @@ body, html {
   letter-spacing: 1px;
 }
 
+/* Grid layout for tips */
 .tips-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -98,6 +109,8 @@ body, html {
   max-width: 700px;
   margin: 40px auto 0;
 }
+
+/* Yellow vertical bar beside each tip */
 .yellow-bar {
   width: 4px;
   height: 80%;
@@ -106,35 +119,37 @@ body, html {
   margin-top: 3px;
 }
 
-/* Tip box */
+/* Individual tip container */
 .tip-box {
   display: flex;
-  align-items: center; /* Vertically center */
-  justify-content: flex-start; /* Align items to the start */
+  align-items: center;
+  justify-content: flex-start;
   font-size: 16px;
   height: 100%;
 }
 
-/* Tip number */
+/* Tip number style */
 .tip-number {
   font-size: 30px;
   font-weight: bold;
   margin-right: 10px;
   color: white;
   display: flex;
-  align-items: center; /* Vertically center the number */
-  justify-content: center; /* Horizontally center the number */
-  width: 50px; /* Fixed width for number */
-  text-align: center; /* Center the number text */
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  text-align: center;
 }
 
-/* Tip text */
+/* Text inside each tip */
 .tip-text {
   font-size: 25px;
   line-height: 1.2;
   text-transform: uppercase;
   color: white;
 }
+
+/* Decorative diagonal stripes */
 .stripes {
   width: 100%;
   height: 25px;
@@ -149,81 +164,36 @@ body, html {
   z-index: 2;
 }
 
+/* Top stripe position */
 .top-stripes {
   top: 0;
   width: 50%;
   left: 0;
 }
 
+/* Bottom stripe position */
 .bottom-stripes {
   bottom: 0;
   width: 50%;
   right: 0;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Small Tablet and Phone (Mobile Portrait) */
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 80px;
-  }
-
-  .right {
-    left: 10px;
-    font-size: 30px;
-    bottom: 15px;
-  }
-
-  .left {
-    right: 10px;
-    font-size: 30px;
-    bottom: 15px;
-  }
-
-  .subtitle {
-    font-size: 30px;
-    padding: 5px 15px;
-  }
-
-  .tagline {
-    font-size: 28px;
-  }
-
-  .tips-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .tip-box {
-    font-size: 14px;
-  }
-
-  .tip-number {
-    font-size: 24px;
-  }
-
-  .tip-text {
-    font-size: 20px;
-  }
-}
-
-/* Small Mobile Phones */
+/* Mobile phones (max-width: 480px) */
 @media (max-width: 480px) {
   .main-title {
     font-size: 80px;
   }
 
   .right {
-    left: 10px;
-    font-size: 30px;
-    bottom: 10px;
+    left: -20px;
+    font-size: 20px;
+    bottom: 30px;
   }
 
   .left {
-    right: 10px;
-    font-size: 30px;
-    bottom: 10px;
+    right: -20px;
+    font-size: 20px;
+    bottom: 30px;
   }
 
   .subtitle {
@@ -238,15 +208,19 @@ body, html {
     font-size: 18px;
   }
 
+  /* Stack tips vertically and adjust layout */
   .tips-container {
     grid-template-columns: 1fr;
     gap: 15px;
+    display: grid;
+    justify-items: flex-start;
+    position: relative;
+    left: 59px;
+    min-width: 480px;
   }
-
-
 }
 
-/* Large Desktop */
+/* Large desktops (min-width: 1200px) */
 @media (min-width: 1200px) {
   .main-title {
     font-size: 80px;
@@ -280,45 +254,29 @@ body, html {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px 50px;
   }
-
-
 }
-/* Small Tablet and Phone (Mobile Portrait) */
+
+/* Tablets and smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
   .tip-box {
-    font-size: 14px; /* Reduce font size for smaller devices */
-    }
-
-  .tip-number {
-    font-size: 24px; /* Smaller number font size */
-    width: 40px; /* Adjust width for smaller devices */
-  }
-
-  .tip-text {
-    font-size: 20px; /* Adjust font size for text */
-  }
-}
-
-/* Small Mobile Phones */
-@media (max-width: 480px) {
-  .tip-box {
-    font-size: 14px; /* Adjust font size */
+    font-size: 14px;
   }
 
   .tip-number {
-    font-size: 20px; /* Further reduce font size */
-    width: 35px; /* Further adjust width for smaller devices */
+    font-size: 24px;
+    width: 40px;
   }
 
   .tip-text {
-    font-size: 18px; /* Further adjust font size for text */
+    font-size: 20px;
+  }
+  .tips-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    display: grid;
+    justify-items: flex-start;
+    position: relative;
+    left: 95px;
+    min-width: 768px;
   }
 }
-
-
-
-
- 
-
-
-
