@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front page</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  -->
+    <link rel="stylesheet" href="frontpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <div class="navbar">
+      <nav>
+        <!-- logo -->
+         <div class="logo">
+          <i class="fa-duotone fa-solid fa-car-side"></i>
+         </div>
+        <!-- search bar -->
+         <div class="search-bar">
+           <input type="text" placeholder="Search..." />
+  
+         </div>
+  
+      <div class="nav-links">
+  
+        <a href="#">About</a>
+        <a href="#">Our Services</a>
+        <a href="#">Explore More</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#" onclick="toggleMenu()">About</a>
+      <a href="#" onclick="toggleMenu()">Our Services</a>
+      <a href="#" onclick="toggleMenu()">Explore More</a>
+    </div>
+    </div>
+    <div class="container">
+      <!-- <div class="top-small-text">BEST CAR DEALER IN THE TOWN</div> -->
+      <div class="left-top-plus">
+        <span>+</span> <span>+</span> <span>+</span> <span>+</span>
+        <span>+</span>
+      </div>
+      <div class="rigth-top-plus">
+        <span>+</span> <span>+</span> <span>+</span> <span>+</span>
+        <span>+</span>
+      </div>
+
+      <div class="yellow-strip">
+        <div class="strip-content">
+          <p class="strip-subtitle">BEST CAR DEALER IN THE TOWN</p>
+          <h1 class="strip-title">
+            UNLEASH YOUR<br /><span><h1>DRIVE</h1></span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="description">
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam,
+          beatae. Ut laborum suscipit accusantium, ab reiciendis quidem aliquam
+          reprehenderit, placeat alias culpa omnis molestiae maxime veniam ex
+          quas eveniet eum recusandae animi iste soluta.
+        </p> -->
+      </div>
+
+      <div class="phone-container">
+        <div class="phone-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="phone-number">1800-818-6767</div>
+        <div class="contact-description">For More Information:</div>
+      </div>
+
+      <div class="right-webite-text">
+        <a href="https://www.example.com" target="_blank" class="website-link">
+          WWW.YOURWEBSITE.COM
+        </a>
+      </div>
+      <div class="left-webite-text">
+        <a href="https://www.example.com" target="_blank" class="website-link">
+          WWW.YOURWEBSITE.COM
+        </a>
+      </div>
+      <div class="background"></div>
+      <div class="car-image">
+        <img src="image.png" alt="car image" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

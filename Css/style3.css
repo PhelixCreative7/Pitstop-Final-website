@@ -45,7 +45,7 @@ html {
 .top-left-stripes div {
   width: 12px;
   height: 48px;
-  background: linear-gradient(180deg, #facc15, #b28704);
+  background: linear-gradient(to bottom, #f07503, #dff800);
   transform-origin: bottom left;
   transform: rotate(-12deg);
   opacity: 1;
@@ -63,7 +63,7 @@ html {
 .bottom-right-stripes div {
   width: 12px;
   height: 48px;
-  background: linear-gradient(180deg, #facc15, #b28704);
+  background: linear-gradient(to bottom, #dff800, #f07503);
   transform-origin: bottom left;
   transform: rotate(-12deg);
   opacity: 1;
@@ -104,7 +104,7 @@ html {
 .left-bars div {
   width: 80px;
   height: 100%;
-  background: linear-gradient(to bottom, #facc15, #b28704);
+  background: linear-gradient(to right, #eeff00, #fd9902);
   opacity: 1;
 }
 
