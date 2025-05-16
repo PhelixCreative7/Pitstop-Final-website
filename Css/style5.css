@@ -1,0 +1,287 @@
+
+/* Base styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('carside.jpg') no-repeat center center/cover;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: hidden; 
+}
+
+.container {
+  position: relative;
+  padding: 250px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  overflow: hidden;
+}
+
+.top-decor {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  margin: 10px 0 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  left: 1%;
+}
+
+.spacer {
+  flex: 1;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  right: 1%;
+}
+
+.slash-top-left {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.slash-bottom-right {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  bottom: 0px;
+  right: 0%;
+  text-align: right;
+}
+
+h1 {
+  position: absolute;
+  font-size: 70px;
+  font-weight: 900;
+  font-family: 'Bebas Neue', sans-serif;
+  top: 10%;
+  left: 40%;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: -100px;
+}
+
+.service-card {
+  background-color: transparent;
+  width: 300px;
+  text-align: center;
+}
+
+.service-card1 {
+  position: absolute;
+  top: 245px;
+  right: 17%;
+}
+
+.hexagon i {
+  font-size: 30px;
+  color: white;
+}
+
+.service-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.yellow-bar {
+  width: 90px;
+  height: 5px;
+  background-color: #fdb813;
+  margin: 10px auto;
+}
+
+.service-description {
+  font-size: 19px;
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 412px) {
+  body {
+    background-size: cover;
+    overflow-y: auto;
+  }
+
+  .container {
+    padding: 100px 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+    top: 6%;
+    left: 30%;
+    transform: none;
+  }
+
+  .top-decor {
+    font-size: 1rem;
+    top: 70px;
+    left: 2%;
+  }
+  .spacer{
+    font-size: 1rem;
+    top: 4%;
+    right: 2%;
+
+  }
+
+  .service-card {
+    width: 90%;
+    margin: 60px auto;
+  }
+
+  .service-card1 {
+    position: static;
+    margin-top: 90px;
+    right: 20%;
+    top: auto;
+  }
+
+  .service-title {
+    font-size: 24px;
+  }
+
+  .service-description {
+    font-size: 16px;
+  }
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: linear-gradient(to right, yellow, orange);
+  color: black;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+
+  @media (min-width: 650px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .search-bar {
+      display: none;
+    }
+  }
+
+.stripes {
+  width: 100%;
+  height: 25px;
+  background-image: repeating-linear-gradient(
+    45deg,
+     rgb(255,191,0),
+     rgb(255,191,0) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  position: absolute;
+  z-index: 2;
+}
+.top-stripes {
+    width: 35%;
+  top: 7%;
+  line-height: 55%;
+}
+.bottom-stripes {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  max-width: 100%;
+  z-index: 999; /* optional: keeps it above other content */
+}
+
+
+@media (max-width:600px){
+    body{
+        overflow-y:scroll;
+    }
+  }
+
+
+/* Responsive sizes */
+@media (max-width: 768px) {
+  .bottom-stripes {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-stripes {
+    width: 70%;
+  }
+} 
