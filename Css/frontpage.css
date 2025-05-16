@@ -22,7 +22,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("empty-street-beautiful-trees_23-2148999131.jpg");
+  background-image: url("/Pitstop-Final-website/Images/empty-street-beautiful-trees_23-2148999131.jpg");
   background-size: cover;
   background-position: center;
   filter: grayscale(100%) brightness(20%);
@@ -114,7 +114,6 @@ nav {
 .search-bar input::placeholder {
   color: rgba(255, 255, 255, 0.993);
 }
-
 
 /* Mobile Menu */
 .mobile-menu {
@@ -529,7 +528,7 @@ nav {
     margin-bottom: 10px;
     letter-spacing: 3px;
     text-align: center;
-    white-space:nowrap;
+    white-space: nowrap;
   }
 
   .strip-title {
@@ -541,7 +540,7 @@ nav {
     text-align: center;
     letter-spacing: 5px;
     transform: none;
-    white-space:nowrap;
+    white-space: nowrap;
   }
 
   .strip-title span h1 {
@@ -565,11 +564,10 @@ nav {
   .phone-container {
     position: relative;
     top: 80%;
-    margin-left:60% ; 
+    margin-left: 60%;
     margin-bottom: 20%;
-    
   }
-  .phone-number{
+  .phone-number {
     position: relative;
     bottom: 20%;
     right: 0;
@@ -579,19 +577,13 @@ nav {
     position: relative;
     top: 100%;
     right: 0;
-
   }
-
 
   .contact-description {
     position: absolute;
     bottom: 90%;
     margin-right: 10%;
     white-space: nowrap;
-
-    
-    
-    
   }
 
   .left-webite-text,
@@ -599,21 +591,17 @@ nav {
     display: none; /* hide vertical side text on mobile */
   }
 
-  
   .rigth-top-plus {
     position: relative;
     top: 28%;
     left: 24%;
     font-size: 20px;
-
   }
-  .left-top-plus{
+  .left-top-plus {
     position: relative;
     top: 30%;
     left: 60%;
     font-size: 20px;
-    
-
   }
 }
 
@@ -648,7 +636,7 @@ nav {
       bottom: 35%;
       padding: 30px 8px;
     }
-  
+
     .strip-subtitle {
       position: relative;
       top: 58%;
@@ -659,7 +647,7 @@ nav {
       text-align: center;
       white-space: nowrap;
     }
-  
+
     .rigth-top-plus {
       position: relative;
       margin-top: -2%;
@@ -667,7 +655,7 @@ nav {
       font-size: 10px;
       letter-spacing: 5px;
     }
-  
+
     .left-top-plus {
       position: relative;
       margin-top: 10%;
@@ -675,7 +663,7 @@ nav {
       font-size: 10px;
       letter-spacing: 5px;
     }
-  
+
     .strip-title {
       position: relative;
       font-size: 28px;
@@ -686,7 +674,7 @@ nav {
       transform: none;
       white-space: nowrap;
     }
-  
+
     .strip-title span h1 {
       position: absolute;
       top: 46px;
@@ -696,21 +684,21 @@ nav {
       letter-spacing: 10px;
       text-align: center;
     }
-  
+
     .car-image img {
       position: relative;
       width: 100%;
       left: 0;
       top: 120px;
     }
-  
+
     .phone-container {
       position: relative;
       /* margin-bottom: 20%; */
       margin-top: -20%;
       right: -10%;
     }
-  
+
     .phone-number {
       position: relative;
       bottom: 90%;
@@ -718,7 +706,7 @@ nav {
       font-size: 12px;
       white-space: nowrap;
     }
-  
+
     .phone-icon {
       position: absolute;
       bottom: 10px;
@@ -726,15 +714,14 @@ nav {
       margin-top: 10%;
       font-size: 7px;
     }
-    
-  
+
     .contact-description {
       position: relative;
       bottom: 30px;
       font-size: 10px;
       text-align: center;
     }
-  
+
     .left-webite-text,
     .right-webite-text {
       display: none;
@@ -752,7 +739,7 @@ nav {
       bottom: 35%; /* reduce height from bottom */
       padding: 40px 10px;
     }
-  
+
     .strip-subtitle {
       display: flex;
       position: relative;
@@ -762,9 +749,9 @@ nav {
       margin-bottom: 10px;
       letter-spacing: 3px;
       text-align: center;
-      white-space:nowrap;
+      white-space: nowrap;
     }
-  
+
     .strip-title {
       display: flex;
       position: relative;
@@ -774,9 +761,9 @@ nav {
       text-align: center;
       letter-spacing: 5px;
       transform: none;
-      white-space:nowrap;
+      white-space: nowrap;
     }
-  
+
     .strip-title span h1 {
       display: flex;
       position: absolute;
@@ -787,22 +774,21 @@ nav {
       letter-spacing: 15px;
       /* text-align:end; */
     }
-  
+
     .car-image img {
       position: relative;
       width: 100%;
       left: 0;
       margin-top: 3%;
     }
-  
+
     .phone-container {
       position: relative;
       top: 80%;
-      margin-left:50% ; 
+      margin-left: 50%;
       margin-bottom: 20%;
-      
     }
-    .phone-number{
+    .phone-number {
       position: relative;
       bottom: 20%;
       right: 0;
@@ -812,41 +798,31 @@ nav {
       position: relative;
       top: 100%;
       right: 0;
-  
     }
-  
-  
+
     .contact-description {
       position: absolute;
       bottom: 90%;
       margin-right: 10%;
       white-space: nowrap;
-  
-      
-      
-      
     }
-  
+
     .left-webite-text,
     .right-webite-text {
       display: none; /* hide vertical side text on mobile */
     }
-  
-    
+
     .rigth-top-plus {
       position: relative;
       top: 28%;
       left: 24%;
       font-size: 20px;
-  
     }
-    .left-top-plus{
+    .left-top-plus {
       position: relative;
       top: 30%;
       left: 60%;
       font-size: 20px;
-      
-  
     }
   }
 
@@ -861,7 +837,7 @@ nav {
       bottom: 35%; /* reduce height from bottom */
       padding: 40px 10px;
     }
-  
+
     .strip-subtitle {
       display: flex;
       position: relative;
@@ -871,9 +847,9 @@ nav {
       margin-bottom: 10px;
       letter-spacing: 3px;
       text-align: center;
-      white-space:nowrap;
+      white-space: nowrap;
     }
-  
+
     .strip-title {
       display: flex;
       position: relative;
@@ -883,9 +859,9 @@ nav {
       text-align: center;
       letter-spacing: 5px;
       transform: none;
-      white-space:nowrap;
+      white-space: nowrap;
     }
-  
+
     .strip-title span h1 {
       display: flex;
       position: absolute;
@@ -896,22 +872,21 @@ nav {
       letter-spacing: 15px;
       /* text-align:end; */
     }
-  
+
     .car-image img {
       position: relative;
       width: 100%;
       left: 0;
       margin-top: -10%;
     }
-  
+
     .phone-container {
       position: relative;
       top: 80%;
-      margin-left:60% ; 
+      margin-left: 60%;
       margin-bottom: 20%;
-      
     }
-    .phone-number{
+    .phone-number {
       position: relative;
       bottom: 20%;
       right: 0;
@@ -921,44 +896,31 @@ nav {
       position: relative;
       top: 100%;
       right: 0;
-  
     }
-  
-  
+
     .contact-description {
       position: absolute;
       bottom: 90%;
       margin-right: 10%;
       white-space: nowrap;
-  
-      
-      
-      
     }
-  
+
     .left-webite-text,
     .right-webite-text {
       display: none; /* hide vertical side text on mobile */
     }
-  
-    
+
     .rigth-top-plus {
       position: relative;
       top: 28%;
       left: 24%;
       font-size: 20px;
-  
     }
-    .left-top-plus{
+    .left-top-plus {
       position: relative;
       top: 30%;
       left: 60%;
       font-size: 20px;
-      
-  
     }
   }
-  
-  
-  
 }
