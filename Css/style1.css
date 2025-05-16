@@ -26,7 +26,7 @@ body, html {
 }
 .content h1 {
     position: absolute;
-    top: 10px;
+    top: 90px;
     font-size: 50px;
     line-height: 1.5;
     margin-bottom: 1px;
@@ -42,11 +42,13 @@ body, html {
 }
 .car-image {
     position:absolute;
-    bottom: 0.7 ;
+    top: 5px;
+    /* bottom: 0; */
+    margin-bottom:4px ;
     margin-bottom: 0px;
-    right:22%;
-    max-width: 100%;
-    width: 800px;    /* Increase this value as needed */
+    right:17%;
+    max-width: 90%;
+    width: 750px;    /* Increase this value as needed */
   height: aut15;
   z-index: 3;
 }
@@ -73,13 +75,13 @@ body, html {
 
   .yellow-stripe {
     position: absolute;
-      right: 320px;
+      right: 290px;
      max-width: 100%;
-      top: 0;
-      width: 250px;
+      top: 60px;
+      width: 200px;
       height: 69%;
       background: linear-gradient(to bottom, #FFD700, #FFA500); /* Yellow to orange */
-      transform: skewX(-20deg);
+      transform: skewX(-10deg);
       box-shadow: 0 0 30px rgba(255, 200, 0, 0.5);
       z-index: 2;
       
@@ -99,15 +101,89 @@ body, html {
     letter-spacing: 10px;
     text-align: left;
   }
-@media (max-width: 600px) {
-  .yellow-stripe {
-    width: 200px;
-    right: 0;
+  nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: linear-gradient(to right, yellow, orange);
+  color: black;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
   }
+
+  @media (min-width: 650px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .search-bar {
+      display: none;
+    }
+  }
+
+
+ @media (max-width: 600px){
+  .yellow-stripe {
+    position: absolute;
+    top:50px;
+    width: 120px;
+    right: 0;
+    height: 0 150px;
+    transform: rotate(4deg); /* Slight tilt */
+    transform-origin: top ;
+  }
+
   .car-image {
     width: 90%;
-    right: 0;
-    bottom: 5px;
+    right: 2px;
+    top: 420px;
   }
   .content{
     display: flex;
@@ -117,12 +193,13 @@ body, html {
     height: 90px;
     justify-content: left;
     padding: 0% 0%;
-    font-size: 70px;
+    font-size: 50px;
    }
     
    
   .content h1 {
-   
+   position:absolute;
+   right: -160px;
     height: 100px;
     font-size: 20px;
     font-weight: bold;

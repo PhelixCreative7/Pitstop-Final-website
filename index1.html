@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="/Pitstop-Final-website/Css/style1.css">
 </head>
 <body>
+    <div class="navbar">
+    <nav>
+      <!-- logo -->
+       <div class="logo">
+        <i class="fa-duotone fa-solid fa-car-side"></i>
+       </div>
+      <!-- search bar -->
+       <div class="search-bar">
+         <input type="text" placeholder="Search..." />
+
+       </div>
+
+    <div class="nav-links">
+
+      <a href="#">About</a>
+      <a href="#">Our Services</a>
+      <a href="#">Explore More</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#" onclick="toggleMenu()">About</a>
+    <a href="#" onclick="toggleMenu()">Our Services</a>
+    <a href="#" onclick="toggleMenu()">Explore More</a>
+  </div>
+ </div>
     <div class="container">
         <div class="overlay"></div>
         <div class="content">
