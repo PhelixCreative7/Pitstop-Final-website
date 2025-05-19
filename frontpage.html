@@ -14,42 +14,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <div class="navbar">
       <nav>
         <!-- logo -->
-         <div class="logo">
+        <div class="logo">
           <i class="fa-duotone fa-solid fa-car-side"></i>
-         </div>
+        </div>
         <!-- search bar -->
-         <div class="search-bar">
-           <input type="text" placeholder="Search..." />
-  
-         </div>
-  
-      <div class="nav-links">
-  
-        <a href="#">About</a>
-        <a href="#">Our Services</a>
-        <a href="#">Explore More</a>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <div class="nav-links">
+          <a href="#">About</a>
+          <a href="#">Our Services</a>
+          <a href="#">Explore More</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="mobile-menu">
+        <a href="#" onclick="toggleMenu()">About</a>
+        <a href="#" onclick="toggleMenu()">Our Services</a>
+        <a href="#" onclick="toggleMenu()">Explore More</a>
       </div>
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </nav>
-  
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu">
-      <a href="#" onclick="toggleMenu()">About</a>
-      <a href="#" onclick="toggleMenu()">Our Services</a>
-      <a href="#" onclick="toggleMenu()">Explore More</a>
-    </div>
     </div>
     <div class="container">
+      
+
       <!-- <div class="top-small-text">BEST CAR DEALER IN THE TOWN</div> -->
       <div class="left-top-plus">
         <span>+</span> <span>+</span> <span>+</span> <span>+</span>
@@ -61,6 +64,11 @@
       </div>
 
       <div class="yellow-strip">
+        <img src="/Pitstop-Final-website/Images/logoo-removebg-preview.png" class="big-yellow-arrow" alt="Logo Arrow">
+        <img src="/Pitstop-Final-website/Images/logoo-removebg-preview.png" class="small-yellow-arrow" alt="Logo Arrow">
+        <img src="/Pitstop-Final-website/Images/logoo-removebg-preview.png" class="xl-yellow-arrow" alt="Logo Arrow">
+        <!-- <img src="/Pitstop-Final-website/Images/logoo-removebg-preview.png" class="xxl-yellow-arrow" alt="Logo Arrow">
+        <img src="/Pitstop-Final-website/Images/logoo-removebg-preview.png" class="xxxl-yellow-arrow" alt="Logo Arrow">  -->
         <div class="strip-content">
           <p class="strip-subtitle">BEST CAR DEALER IN THE TOWN</p>
           <h1 class="strip-title">

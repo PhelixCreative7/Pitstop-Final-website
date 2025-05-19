@@ -43,8 +43,8 @@ body, html {
 .car-image {
     position:absolute;
     top: 5px;
-    /* bottom: 0; */
-    margin-bottom:4px ;
+    bottom: 0;
+    margin-bottom:2px ;
     margin-bottom: 0px;
     right:17%;
     max-width: 90%;
