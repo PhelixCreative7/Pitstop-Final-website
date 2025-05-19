@@ -13,15 +13,29 @@ body {
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding: 250px;
+  padding: 300px;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   overflow: hidden;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;  
+  align-items: flex-start; 
+  gap: 30px;   
+}          
+
+.service-card {
+  background-color: transparent;
+  width: 300px;
+  text-align: center;
+}
+
+
 .top-decor {
   position: absolute;
-  top: 10%;
+  top: 13%;
   display: flex;
   margin: 10px 0 5px 0;
   font-size: 1.5rem;
@@ -34,7 +48,7 @@ body {
 .spacer {
   flex: 1;
   position: absolute;
-  top: 10%;
+  top: 13%;
   display: flex;
   align-items: center;
   margin: 10px 0 5px 0;
@@ -66,11 +80,11 @@ body {
 
 h1 {
   position: absolute;
-  font-size: 55px;
+  font-size: 69px;
   font-weight: 900;
   font-family: 'Bebas Neue', sans-serif;
-  top: 10%;
-  left: 35%;
+  top: 15%;
+  left: 40%;
 }
 
 .services {
@@ -84,13 +98,14 @@ h1 {
   background-color: transparent;
   width: 300px;
   text-align: center;
-  
+  margin-left: 3%;
+  right:50%;
 }
 
 .service-card1 {
   position: absolute;
   top: 245px;
-  right: 17%;
+  right: 20%;
 }
 
 .hexagon i {
@@ -118,7 +133,33 @@ h1 {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Responsive behavior */
+.stripes {
+  width: 100%;
+  height: 25px;
+  background-image: repeating-linear-gradient(
+    45deg,
+     rgb(255,191,0),
+     rgb(255,191,0) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  position: absolute;
+  z-index: 2;
+}
+.top-stripes {
+    width: 35%;
+  top: 8%;
+  line-height: 55%;
+}
+.bottom-stripes {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  max-width: 100%;
+  z-index: 999; /* optional: keeps it above other content */
+  
+}
 
 
 nav {
@@ -305,7 +346,7 @@ nav {
 
   .top-decor {
     font-size: 1rem;
-    top: 90px;
+    top: 80px;
     left: 2%;
   }
   .spacer{
@@ -355,34 +396,9 @@ nav {
   .search-bar {
     display: none;
   }
-
-.stripes {
-  width: 100%;
-  height: 25px;
-  background-image: repeating-linear-gradient(
-    45deg,
-     rgb(255,191,0),
-     rgb(255,191,0) 10px,
-    transparent 10px,
-    transparent 20px
-  );
-  position: absolute;
-  z-index: 2;
-}
-.top-stripes {
-    width: 35%;
-  top: 7%;
-  line-height: 55%;
-}
-.bottom-stripes {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 35%;
-  max-width: 100%;
-  z-index: 999; /* optional: keeps it above other content */
 }
 
+}
 
 @media (max-width:600px){
     body{
@@ -400,7 +416,7 @@ nav {
 
 @media (max-width: 480px) {
   .bottom-stripes {
-    width: 70%;
+    width: 50%;
   }
 
 

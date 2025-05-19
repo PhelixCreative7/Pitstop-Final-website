@@ -42,11 +42,17 @@ body, html {
 }
 .car-image {
     position:absolute;
+<<<<<<< HEAD
     top: 5px;
     bottom: 0;
     margin-bottom:2px ;
+=======
+    top: 150px;
+    bottom: 0;
+    margin-bottom:4px ;
+>>>>>>> 86b58ca078a12b213e27081f0a73a4d1c72b024d
     margin-bottom: 0px;
-    right:17%;
+    right:15%;
     max-width: 90%;
     width: 750px;    /* Increase this value as needed */
   height: aut15;
