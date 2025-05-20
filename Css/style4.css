@@ -15,7 +15,7 @@ body, html {
 
 /* Background with image and dark overlay */
 .background-overlay {
-  background: url('image.jpg') no-repeat center center/cover;
+  background: url('/Pitstop-Final-website/Images/image.jpg') no-repeat center center/cover;
   position: relative;
   min-height: 100vh;
   width: 100%;
