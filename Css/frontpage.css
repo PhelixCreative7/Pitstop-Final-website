@@ -10,6 +10,7 @@ body {
   overflow-y: hidden;  */
 }
 .container {
+  justify-content: center;
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -29,6 +30,43 @@ body {
   z-index: -1;
 }
 
+.big-yellow-arrow {
+  position: absolute;
+  left: 105%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Behind text, in front of yellow strip */
+  width: 1500px; /* Adjust based on your design */
+  height: auto;
+  opacity: 1; /* or less if needed */
+  pointer-events: none; /* So it doesn't block text interaction */
+}
+
+.small-yellow-arrow {
+  position: absolute;
+  left: 86%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  /* z-index: 2; */
+  width: 1500px; /* Adjust based on your design */
+  height: auto;
+  opacity: 1; /* or less if needed */
+  pointer-events: none; /* So it doesn't block text interaction */
+}
+
+.xl-yellow-arrow {
+  position: absolute;
+  left: 66%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  /* z-index: 2; */
+  width: 1500px; /* Adjust based on your design */
+  height: auto;
+  opacity: 1; /* or less if needed */
+  pointer-events: none; /* So it doesn't block text interaction */
+}
+
+
 nav {
   position: fixed;
   top: 0;
@@ -37,9 +75,10 @@ nav {
   /* justify-content: space-between; */
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(6px);
+  background: black;
+  /* backdrop-filter: blur(6px); */
   z-index: 1000;
+  /* background-color: black; */
 }
 
 .nav-links {
@@ -90,31 +129,6 @@ nav {
   color: white;
   font-size: 1.5rem;
 }
-
-.search-bar {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  padding: 0 1rem;
-  background-color: transparent; /* already transparent */
-}
-
-.search-bar input {
-  width: 100%;
-  max-width: 300px;
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: 1px solid rgb(255, 255, 255);
-  outline: none;
-  font-size: 1rem;
-  background-color: transparent;
-  color: white;
-}
-
-.search-bar input::placeholder {
-  color: rgba(255, 255, 255, 0.993);
-}
-
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
@@ -182,7 +196,7 @@ nav {
 }
 
 .yellow-strip {
-  background: linear-gradient(to top, #fa8602, #fbff02);
+  background: #ffcc00;
   position: absolute;
   top: 0;
   left: 25%;
@@ -195,7 +209,7 @@ nav {
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   font-family: "Bebas Neue", sans-serif;
-  z-index: 1;
+  z-index: 2;
 }
 
 .strip-subtitle {
@@ -209,6 +223,7 @@ nav {
   left: 0%;
   justify-content: center;
   margin-top: -10%;
+  z-index: 3;
   filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.7));
 }
 
@@ -223,6 +238,7 @@ nav {
   letter-spacing: 12px;
   text-transform: uppercase;
   font-family: "Bebas Neue", sans-serif;
+  z-index: 3;
   filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.7));
 }
 
@@ -236,6 +252,7 @@ nav {
   letter-spacing: 30px;
   margin-top: -1%;
   left: 2%;
+  z-index: 3;
   filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.7));
 }
 .phone-container {
@@ -267,11 +284,11 @@ nav {
   font-family: Arial, sans-serif;
 }
 .car-image img {
-  width: 900px;
+  width: 1000px;
   position: absolute;
   /* left: 50%; */
-  left: 15%;
-  margin-bottom: -2%;
+  left: 16%;
+  margin-bottom: 9%;
 
   bottom: -110px;
   /* transform: translateX(-60%); */
@@ -361,150 +378,6 @@ nav {
   z-index: 4;
   right: 450px;
   top: 60px;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(6px);
-  z-index: 1000;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  margin-left: auto;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.nav-links a:hover {
-  background: linear-gradient(to right, yellow, orange);
-  color: black;
-}
-
-/* Hamburger */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, yellow, orange);
-  padding: 10px;
-  border-radius: 8px;
-  margin-right: 1rem;
-}
-
-.logo i {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.search-bar {
-  flex: 1; /* takes up available space */
-  display: flex;
-  justify-content: center;
-  padding: 0 1rem;
-}
-
-.search-bar input {
-  width: 100%;
-  max-width: 300px;
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-}
-
-/* Mobile Menu */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 250px;
-  height: 100%;
-  background-color: linear-gradient(to right, yellow, orange);
-  color: white;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  transition: right 0.3s ease;
-  z-index: 2000;
-  border-radius: 10px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.mobile-menu::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(to right, yellow, orange);
-  z-index: -1;
-  border-radius: 12px;
-}
-
-.mobile-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: background 0.3s ease;
-  padding: 8px;
-  border-radius: 5px;
-}
-
-.mobile-menu a {
-  color: white;
-  text-shadow: 1px 1px 2px black;
-}
-
-.mobile-menu a:hover {
-  background: linear-gradient(to right, yellow, orange);
-  color: black;
-}
-
-.mobile-menu.active {
-  right: 0;
-}
-
-.blur-active::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  backdrop-filter: blur(8px);
-  z-index: 1500;
 }
 
 @media (max-width: 768px) {
@@ -826,7 +699,7 @@ nav {
     }
   }
 
-  @media (max-width: 300px) {
+  @media (max-width: 376px) {
     .yellow-strip {
       display: flex;
       justify-content: center;
@@ -834,14 +707,14 @@ nav {
       left: 15%;
       width: 70%;
       border-radius: 0;
-      bottom: 35%; /* reduce height from bottom */
+      bottom: 33%; /* reduce height from bottom */
       padding: 40px 10px;
     }
 
     .strip-subtitle {
       display: flex;
       position: relative;
-      top: 25%;
+      top: 5%;
       left: 2%;
       font-size: 15px;
       margin-bottom: 10px;
@@ -854,7 +727,7 @@ nav {
       display: flex;
       position: relative;
       font-size: 60px;
-      top: 50%;
+      top: 15%;
       right: -2%;
       text-align: center;
       letter-spacing: 5px;
@@ -877,13 +750,13 @@ nav {
       position: relative;
       width: 100%;
       left: 0;
-      margin-top: -10%;
+      top: 40px;
     }
 
     .phone-container {
       position: relative;
       top: 80%;
-      margin-left: 60%;
+      margin-left: 50%;
       margin-bottom: 20%;
     }
     .phone-number {
@@ -912,15 +785,95 @@ nav {
 
     .rigth-top-plus {
       position: relative;
-      top: 28%;
+      top: 19%;
       left: 24%;
       font-size: 20px;
     }
     .left-top-plus {
       position: relative;
-      top: 30%;
+      top: 21%;
       left: 60%;
       font-size: 20px;
     }
   }
-}
+
+  /* @media screen and (min-width: 1960px) {
+    .car-image img {
+      left: 10%; 
+      bottom: -80%; 
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .big-yellow-arrow,
+    .small-yellow-arrow,
+    .xl-yellow-arrow {
+      width: 1100px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .big-yellow-arrow,
+    .small-yellow-arrow,
+    .xl-yellow-arrow {
+      width: 900px;
+    }
+  } */
+  
+  @media (max-width: 376px) {
+    .big-yellow-arrow {
+      position: absolute;
+      margin-left:6%;
+      top: 83%;
+      width: 1000px;
+    }
+  
+    .small-yellow-arrow {
+      position: absolute;
+      margin-left:5%;
+      top: 83%;
+      width: 1000px;
+    }
+  
+    .xl-yellow-arrow {
+      position: absolute;
+      margin-left:2%;
+      top: 83%;
+      width: 1000px;
+    }
+  } 
+  
+  @media (max-width: 768px) {
+    .big-yellow-arrow {
+      position: absolute;
+      left: 130%;
+      top: 83%;
+      width: 1000px;
+    }
+  
+    .small-yellow-arrow {
+      position: absolute;
+      left: 100%;
+      top: 83%;
+      width: 1000px;
+    }
+  
+    .xl-yellow-arrow {
+      position: absolute;
+      left: 70%;
+      top: 83%;
+      width: 1000px;
+    }
+  }
+  
+  /* @media (max-width: 576px) {
+    .big-yellow-arrow,
+    .small-yellow-arrow,
+    .xl-yellow-arrow {
+      left: 50%;
+      top: 65%;
+      width: 300px;
+    } */
+  }
+  
+

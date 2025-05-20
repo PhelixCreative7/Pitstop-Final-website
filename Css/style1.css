@@ -45,9 +45,19 @@ body, html {
 }
 .car-image {
     position:absolute;
+<<<<<<< HEAD
     top: 350px;
+=======
+<<<<<<< HEAD
+    top: 5px;
+    bottom: 0;
+    margin-bottom:2px ;
+=======
+    top: 150px;
+>>>>>>> d21efdbe1afb87a3bfa62b5096bc392537161674
     bottom: 0;
     margin-bottom:4px ;
+>>>>>>> 86b58ca078a12b213e27081f0a73a4d1c72b024d
     margin-bottom: 0px;
     right:15%;
     max-width: 90%;
