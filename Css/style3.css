@@ -185,9 +185,9 @@ html {
 
 .car-image {
   position: absolute;
-  bottom: 0;
-  left: 10%;
-  width: 65%;
+  bottom: -10%;
+  left: -10%;
+  width: 110%;
   height: auto;
   max-width: none;
   filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.7));
@@ -394,15 +394,15 @@ nav {
 
   /* Car image adjustments */
   .car-image {
-    width: 100%;
-    left: 0;
-    bottom: 10%;
-    max-width: 100%;
+    width: 150%;
+    left: -25%;
+    bottom: 5%;
+    max-width: 170%;
   }
   .plus-top-left {
     left: 5%;
   }
-
+  
   @media (max-width: 768px) {
     .nav-links {
       display: none;
@@ -411,7 +411,20 @@ nav {
     .hamburger {
       display: flex;
     }
+    .car-image {
+      width: 150%;
+      left: -25%;
+      bottom: 90%;
+      max-width: 170%;
+    }
+
+    .text-content {
+      max-width: 90%;
+      padding: 0 30px;
+      bottom: 70%;
+    }
   }
+  
 
   @media (min-width: 650px) {
     .mobile-menu {
@@ -428,12 +441,69 @@ nav {
   @media (max-width: 400px) {
     .text-content {
       max-width: 90%;
-      padding: 0 10px;
+      padding: 0 5px;
+      bottom: 70%;
     }
 
     .text-content .small-text {
       font-size: 20px;
       display: block;
     }
+
+    .car-image {
+      width: 150%;
+      left: -25%;
+      bottom: 10%;
+      max-width: 170%;
+    }
   }
 }
+
+@media (max-width: 430px) {
+  .car-image {
+    width: 150%;
+    left: -25%;
+    margin-bottom: 9%;
+    max-width: 170%;
+  }
+
+  .text-content {
+    max-width: 90%;
+    padding: 0 1px;
+    bottom: 200%;
+  }
+}
+@media (max-width: 376px) {
+  .car-image {
+    width: 150%;
+    left: -25%;
+    margin-bottom: 15%;
+    max-width: 170%;
+  }
+}
+
+
+
+   
+@media (max-width: 1024px) {
+.car-image {
+  width: 150%;
+  left: -25%;
+  bottom: 2%;
+  max-width: 170%;
+}  
+
+/* .text-content {
+  max-width: 90%;
+  padding: 0 20px;
+  bottom: 30%;
+} */
+}
+
+
+
+  
+
+
+  
+
