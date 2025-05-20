@@ -129,31 +129,6 @@ nav {
   color: white;
   font-size: 1.5rem;
 }
-
-.search-bar {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  padding: 0 1rem;
-  background-color: transparent; /* already transparent */
-}
-
-.search-bar input {
-  width: 100%;
-  max-width: 300px;
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: 1px solid rgb(255, 255, 255);
-  outline: none;
-  font-size: 1rem;
-  background-color: transparent;
-  color: white;
-}
-
-.search-bar input::placeholder {
-  color: rgba(255, 255, 255, 0.993);
-}
-
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
@@ -309,10 +284,10 @@ nav {
   font-family: Arial, sans-serif;
 }
 .car-image img {
-  width: 900px;
+  width: 1000px;
   position: absolute;
   /* left: 50%; */
-  left: 15%;
+  left: 16%;
   margin-bottom: 9%;
 
   bottom: -110px;
@@ -775,7 +750,7 @@ nav {
       position: relative;
       width: 100%;
       left: 0;
-      margin-top: -15%;
+      top: 40px;
     }
 
     .phone-container {

@@ -23,6 +23,9 @@ body, html {
     top: 10%;
     left: 10%;
     color: white;
+    font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .content h1 {
     position: absolute;
@@ -43,18 +46,22 @@ body, html {
 .car-image {
     position:absolute;
 <<<<<<< HEAD
+    top: 350px;
+=======
+<<<<<<< HEAD
     top: 5px;
     bottom: 0;
     margin-bottom:2px ;
 =======
     top: 150px;
+>>>>>>> d21efdbe1afb87a3bfa62b5096bc392537161674
     bottom: 0;
     margin-bottom:4px ;
 >>>>>>> 86b58ca078a12b213e27081f0a73a4d1c72b024d
     margin-bottom: 0px;
     right:15%;
     max-width: 90%;
-    width: 750px;    /* Increase this value as needed */
+    width: 1150px;    /* Increase this value as needed */
   height: aut15;
   z-index: 3;
 }
@@ -81,10 +88,10 @@ body, html {
 
   .yellow-stripe {
     position: absolute;
-      right: 290px;
+      right: 310px;
      max-width: 100%;
-      top: 60px;
-      width: 200px;
+      top: 65px;
+      width: 250px;
       height: 69%;
       background: linear-gradient(to bottom, #FFD700, #FFA500); /* Yellow to orange */
       transform: skewX(-10deg);
@@ -263,7 +270,7 @@ body, html {
  @media (max-width: 600px){
   .yellow-stripe {
     position: absolute;
-    top:50px;
+    top:65px;
     width: 120px;
     right: 0;
     height: 0 150px;
@@ -272,9 +279,10 @@ body, html {
   }
 
   .car-image {
-    width: 90%;
+    position: absolute;
+   width: 1000px;
     right: 2px;
-    top: 420px;
+    top: 610px;
   }
   .content{
     display: flex;
@@ -290,11 +298,11 @@ body, html {
    
   .content h1 {
    position:absolute;
-   right: -160px;
+   right: -190px;
     height: 100px;
-    font-size: 20px;
+    font-size: 29px;
     font-weight: bold;
-    top: 80px;
+    top: 90px;
     
     /* padding: 5px 0;  */
   }
@@ -334,3 +342,4 @@ body, html {
   .search-bar {
     display: none;
   }
+}
