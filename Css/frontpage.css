@@ -284,10 +284,10 @@ nav {
   font-family: Arial, sans-serif;
 }
 .car-image img {
-  width: 900px;
+  width: 1000px;
   position: absolute;
   /* left: 50%; */
-  left: 15%;
+  left: 16%;
   margin-bottom: 9%;
 
   bottom: -110px;
@@ -750,7 +750,7 @@ nav {
       position: relative;
       width: 100%;
       left: 0;
-      margin-top: -15%;
+      top: 40px;
     }
 
     .phone-container {
